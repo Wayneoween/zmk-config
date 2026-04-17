@@ -10,6 +10,7 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
+    continue-on-error: true
     permissions:
       contents: write
     steps:
@@ -19,8 +20,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install keymap-drawer
-        run: pip install keymap-drawer
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y librsvg2-bin
+          pip install keymap-drawer
 
       - name: Parse and draw keymap
         run: |
@@ -35,7 +38,6 @@ jobs:
           # Draw SVG (all layers in one image)
           keymap draw /tmp/keymap.yaml -o keymap-img/sofle_choc_pro.svg
 
-          # Convert SVG to PNG (rsvg-convert is pre-installed on Ubuntu runners)
           rsvg-convert keymap-img/sofle_choc_pro.svg -o keymap-img/sofle_choc_pro.png
 
       - name: Commit changes
