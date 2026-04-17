@@ -2,7 +2,6 @@ name: Render Keymap
 
 on:
   push:
-    branches: [main]
     paths:
       - "config/sofle_choc_pro.keymap"
       - "config/sofle_choc_pro.json"
