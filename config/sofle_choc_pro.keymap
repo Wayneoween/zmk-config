@@ -27,6 +27,29 @@
         };
     };
 
+    behaviors {
+        DTAPunderscore: DTAPunderscore {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPUNDERSCORE";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+        };
+
+        DTAPsemicolon: DTAPsemicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPSEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp KP_COMMA>, <&kp SEMICOLON>;
+        };
+
+        DTAPcolon: DTAPcolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPCOLON";
+            #binding-cells = <0>;
+            bindings = <&kp KP_DOT>, <&kp COLON>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
