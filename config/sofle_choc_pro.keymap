@@ -110,6 +110,20 @@
             flavor = "tap-preferred";
             quick-tap-ms = <100>;
         };
+
+        EncoderBrightnessDownUp: EncoderBrightnessDownUp {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODERBRIGHTNESSDOWNUP";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+        };
+
+        EncoderEffectNext: EncoderEffectNext {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODEREFFECTNEXT";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFR>, <&rgb_ug RGB_EFF>;
+        };
     };
 
     keymap {
@@ -199,12 +213,14 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                             &to 0  &to 1  &none  &none  &none  &bootloader
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                             &to 0  &to 1  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &none                          &none  &none  &none  &none  &none
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none            &none                          &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG  &none  &none  &none  &none  &none  &none  &none
+&bootloader        &none            &none            &none            &none            &none            &rgb_ug RGB_TOG  &none  &none  &none  &none  &none  &none  &bootloader
                                     &none            &none            &none            &none            &none            &none  &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&EncoderBrightnessDownUp>, <&EncoderEffectNext>;
         };
 
         raise_layer_old {
