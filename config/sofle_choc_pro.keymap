@@ -173,11 +173,11 @@
         raise_layer {
             display-name = "Symbols_Arrows";
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH  &kp DOLLAR  &kp PERCENT                            &trans  &trans     &trans    &trans     &trans   &trans
-&trans     &trans           &kp SEMI          &kp LBKT  &kp RBKT    &kp CARET      &trans                          &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL  &kp BSPC
-&trans     &trans           &kp SEMI          &kp LBKT  &kp RBKT    &kp AMPERSAND  &trans                          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans     &kp LESS_THAN    &kp GREATER_THAN  &kp LBKT  &kp RBKT    &kp ASTERISK   &studio_unlock  &trans  &trans  &trans     &trans    &trans     &trans   &trans
-                            &trans            &trans    &trans      &trans         &trans          &trans  &trans  &trans     &trans    &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH              &kp DOLLAR             &kp PERCENT                            &trans  &trans     &trans    &trans     &trans   &trans
+&trans     &trans           &kp SEMI          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &trans                          &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL  &kp BSPC
+&trans     &trans           &kp SEMI          &kp LBKT              &kp RBKT               &kp AMPERSAND  &trans                          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans     &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK   &studio_unlock  &trans  &trans  &trans     &trans    &trans     &trans   &trans
+                            &trans            &trans                &trans                 &trans         &trans          &trans  &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings =
