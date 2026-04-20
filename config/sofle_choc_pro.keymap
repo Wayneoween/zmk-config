@@ -137,11 +137,11 @@
         win_layer {
             display-name = "win";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2              &kp N3              &kp N4                  &kp N5                                      &kp N6       &kp N7                   &kp N8            &kp N9        &kp N0    &DTAPunderscore
-&kp ESC    &kp Q   &kp W               &kp E               &kp R                   &longPress LC(T) T  &kp Y                                &kp U                    &kp I             &kp O         &kp P     &kp BSPC
-&kp TAB    &kp A   &HML LCTRL S        &HML LEFT_ALT D     &HMShiftL LEFT_SHIFT F  &kp G               &kp H                                &HMShiftR RIGHT_SHIFT J  &HMR RIGHT_ALT K  &HMR RCTRL L  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &longPress LC(X) X  &longPress LC(C) C  &longPress LC(V) V      &kp B               &kp C_MUTE  &kp C_PLAY  &kp N        &kp M                    &DTAPsemicolon    &DTAPcolon    &kp FSLH  &kp RSHFT
-                   &kp LGUI            &trans              &kp LCTRL               &lt 2 SPACE         &kp RET     &kp SPACE   &lt 0 SPACE  &kp RCTRL                &kp RALT          &kp RGUI
+&trans     &trans  &trans              &trans              &trans                  &trans                                      &trans       &trans                   &trans            &trans        &trans    &trans
+&trans     &trans  &trans              &trans              &trans                  &longPress LC(T) T  &trans                               &trans                   &trans            &trans        &trans    &trans
+&trans     &trans  &HML LCTRL S        &trans              &trans                  &trans              &trans                               &trans                   &trans            &HMR RCTRL L  &trans    &trans
+&trans     &trans  &longPress LC(X) X  &longPress LC(C) C  &longPress LC(V) V      &trans              &trans      &trans      &trans       &trans                   &trans            &trans        &trans    &trans
+                   &trans              &trans              &trans                  &trans              &trans      &trans      &trans       &trans                   &trans            &trans
             >;
 
             sensor-bindings =
