@@ -137,11 +137,11 @@
         win_layer {
             display-name = "win";
             bindings = <
-&trans     &trans  &trans              &trans              &trans                  &trans                                      &trans       &trans                   &trans            &trans        &trans    &trans
-&trans     &trans  &trans              &trans              &trans                  &longPress LC(T) T  &trans                               &trans                   &trans            &trans        &trans    &trans
-&trans     &trans  &HML LCTRL S        &trans              &trans                  &trans              &trans                               &trans                   &trans            &HMR RCTRL L  &trans    &trans
-&trans     &trans  &longPress LC(X) X  &longPress LC(C) C  &longPress LC(V) V      &trans              &trans      &trans      &trans       &trans                   &trans            &trans        &trans    &trans
-                   &trans              &trans              &trans                  &trans              &trans      &trans      &trans       &trans                   &trans            &trans
+&trans  &trans  &trans              &trans              &trans              &trans                              &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans              &trans              &trans              &longPress LC(T) T  &trans                  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &HML LCTRL S        &trans              &trans              &trans              &trans                  &trans  &trans  &HMR RCTRL L  &trans  &trans
+&trans  &trans  &longPress LC(X) X  &longPress LC(C) C  &longPress LC(V) V  &trans              &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans
+                &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -197,7 +197,7 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                             &none  &none  &none  &none  &none  &none
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                             &to 0  &to 1  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &none                          &none  &none  &none  &none  &none
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none            &none                          &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG  &none  &none  &none  &none  &none  &none  &none
