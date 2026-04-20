@@ -173,7 +173,7 @@
         };
 
         raise_layer {
-            display-name = "Symbols_Arrows";
+            display-name = "raise_layer";
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH              &kp DOLLAR             &kp PERCENT                            &trans  &trans     &trans    &trans     &trans   &trans
 &trans     &trans           &kp SEMI          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &trans                          &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL  &kp BSPC
